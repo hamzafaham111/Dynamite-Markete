@@ -10,16 +10,16 @@ const PlaceOrder = () => {
                 <h1>Place Your Order</h1>
                 <h4>Shop</h4>
            </div>
-           <Container>
            <form>
-                <Grid container>
-                <Grid container item xs={12} sm={6} spacing="2">
-                <Grid container>
-                <Typography variant="h5" className={classes.topHeading}>
-                Billing details
-                   </Typography>
+               <Grid container>
+                <Grid item xs={12} md={6} spacing="2" style={{padding:"30px"}}>
+                    <Grid container>
+                        <Typography variant="h5" className={classes.topHeading}>
+                            Order details
+                        </Typography>
                    </Grid>
-                    <Grid className={classes.formFont} item xs= {12} md={6}>
+                   <Grid container spacing="2">
+                   <Grid className={classes.formFont} item xs= {12} md={6}>
                         <label>First Name*</label>
                         <input className={classes.input} type = "text"/>
                     </Grid>
@@ -27,9 +27,10 @@ const PlaceOrder = () => {
                         <label>Last Name*</label>
                     <input className={classes.input} type = "text"/>
                     </Grid>
+                   </Grid>
                     <Grid className={classes.formFont} item xs= {12}>
                         <label>Street address*</label>
-                    <input className={classes.input} type = "text" placeholder="House number street name"/>
+                    <input className={classes.input} type = "text" placeholder="House number street name"/><br/>
                     <input className={classes.input} type = "text" placeholder="Apartment, suite, unit, etc (optional)"/>
                     </Grid>
                     <Grid className={classes.formFont} item xs= {12}>
@@ -46,17 +47,42 @@ const PlaceOrder = () => {
                     <input className={classes.input} type = "text" />
                     </Grid>
                    
+                    <Grid container spacing="2">
+                   <Grid className={classes.formFont} item xs= {12} md={6}>
+                        <label>Card Holder Name*</label>
+                        <input className={classes.input} type = "text"/>
+                    </Grid>
+                    <Grid className={classes.formFont} item xs= {12} md={6}>
+                        <label>Card Number*</label>
+                    <input className={classes.input} type = "text"/>
+                    </Grid>
+                   </Grid>
+
+                   <Grid container spacing="2">
+                   <Grid className={classes.formFont} item xs= {12} md={6}>
+                        <label>Expiration Month*</label>
+                        <input className={classes.input} type = "text" placeholder="example: March"/>
+                    </Grid>
+                    <Grid className={classes.formFont} item xs= {12} md={6}>
+                        <label>Expiration Year*</label>
+                    <input className={classes.input} type = "Text" placeholder="example: 2021"/>
+                    </Grid>
+                   </Grid>
+                    
+                   <Grid className={classes.formFont} item xs= {12}>
+                        <label>CVC Number</label>
+                    <input className={classes.input} type = "text" />
+                    </Grid>
                     
                     <Grid className={classes.formFont} item xs={12}>
-                    <Button className={classes.btnStyle} variant="contained" type="submit">Place Your Order</Button>
+                    <button className={classes.btnStyle} variant="contained" type="submit">Place Your Order</button>
                     </Grid>
                 </Grid>
-                <Grid container item xs={12} md={6} >
-                             <PlaceOrderDetailsRight/>     
+                <Grid item xs={12} md={6} style={{ marginTop:"20px", padding:"20px"}}>
+                         <PlaceOrderDetailsRight/>   
                 </Grid>
                 </Grid>
                 </form>
-           </Container>
         </div>
     )
 }

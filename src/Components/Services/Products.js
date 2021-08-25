@@ -13,7 +13,7 @@ const OurProducts = () => {
            <Container className={classes.ourProducts}>
                 <Grid container style={{margin:"auto"}}>
                    <Grid container>
-                   <Typography variant="h4" align="center" className={classes.topHeading}>
+                   <Typography variant="h5" align="center" className={classes.topHeading}>
                         Our Products
                     </Typography>
                    </Grid>

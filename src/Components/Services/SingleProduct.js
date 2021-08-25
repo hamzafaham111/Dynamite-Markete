@@ -27,14 +27,14 @@ const SingleProduct=(Props)=> {
           title="Contemplative Reptile"
         />
         <CardContent >
-          <Typography gutterBottom component="h2" className={classes.price}>
+          <Typography gutterBottom component="h2" className={classes.name}>
           {Props.name}
           </Typography>   
-        <div style={{display:"flex", flexDirection:"row"}}>
-           <Typography gutterBottom component="h2" style={{flex:1}}>
+        <div className={classes.priceBtnTogather}>
+           <Typography gutterBottom component="h2" className={classes.price}>
             {Props.price}
            </Typography>
-            <span style={{border:"solid #C2C2C2 1px", padding:"2px 7px 2px 7px", borderRadius:"5px"}}><AddIcon style={{fontSize:"15px"}}/></span>
+            <span className={classes.addIconBtn}><AddIcon className={classes.addIcon}/></span>
         </div>
         </CardContent>
       </CardActionArea>

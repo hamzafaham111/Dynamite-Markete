@@ -17,10 +17,11 @@ const useStyle = makeStyles(theme=>({
         width:"100%",
         padding:"10px",
         borderRadius:"5px",
-        border:"solid black 1px",
+        border:"none",
+        boxShadow: "rgba(0, 0, 0, 0.2) 0px 0px 5px 0px, rgba(0, 0, 0, 0.2) 0px 0px 1px 0px",
         // boxShadow: "rgba(0, 0, 0, 0.2) 0px 0px 5px 0px, rgba(0, 0, 0, 0.2) 0px 0px 1px 0px",
         outline:"none",
-        marginTop:"8px",
+        marginTop:"15px",
     },
     outerContainer:{
         marginTop:"20px"
@@ -53,7 +54,8 @@ const useStyle = makeStyles(theme=>({
         textTransform: "capitalize",
         [theme.breakpoints.down("sm")]:{
             marginTop:"20px",
-        }
+        },
+        border:"none",
     },
     topHeading:{
         fontWeight:"bold",
@@ -72,6 +74,11 @@ const useStyle = makeStyles(theme=>({
         fontWeight:"bold",
         fontSize:"15px",
         marginBottom:"20px",
+    },
+    textBold3:{
+        fontWeight:"bold",
+        fontSize:"25px",
+        marginTop:"20px",
     },
     fontSize:{
         fontSize:"12px",
@@ -97,6 +104,17 @@ const useStyle = makeStyles(theme=>({
     headingTagsRS:{
         background:"#C7C7C7",
         width:"100%",
+    },
+    placeOrderRSDetailsElement:{
+        padding:"17px", 
+        borderBottom:"solid #DDDDDD 1px",
+        fontSize:"15px",
+    },
+    placeOrderRSDetailsElementHead:{
+        padding:"17px", 
+        borderBottom:"solid #DDDDDD 1px",
+        fontSize:"16px",
+        background:"#DBDBDB"
     }
 }))
 export default useStyle;

@@ -8,14 +8,16 @@ display:"flex",
     },
     link:{
       textDecoration:"none",
-      color:"black"
+      color:"black",
+      "&:hover":{color:"black",},
     },
     title: {
       flexGrow: 1,
     },
     logo:{
         width:"200px",  
-        height:"100px"    
+        height:"100px",
+        objectFit:"cover",   
     }
   }));
   export default useStyles;

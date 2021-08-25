@@ -6,6 +6,7 @@ import Carasul from './Components/CarasolBar/BigCarasul';
 import Cart from './Components/Cart/Cart';
 import WhatIsDynamite from './Components/WhatIsDyNAMITE/WhatIsDynamite';
 import PlaceOrder from './Components/PlaceOrder/PlaceOrder';
+import Login from './Components/Registration/Login';
 import './index.css';
 import {
   BrowserRouter as Router,
@@ -29,6 +30,7 @@ const App = () => {
     <Route path="/detail"><Detail/></Route>
     <Route path="/cart"><Cart/></Route>
     <Route path="/place order"><PlaceOrder/></Route>
+    <Route path="/login"><Login/></Route>
     </Switch>
     </Router>
    </div>
