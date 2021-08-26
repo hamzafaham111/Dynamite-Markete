@@ -20,7 +20,7 @@ const OurProducts = () => {
                     {
                         Data.map((data)=>{
                            return(
-                               <Grid item xs={12} sm={6} lg={3}>
+                               <Grid item xs={12} sm={6} lg={3} >
                                    <Link className={classes.link} to="detail" >
                                 <Products 
                                 name={data.name} 

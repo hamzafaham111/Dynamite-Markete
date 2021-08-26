@@ -43,7 +43,7 @@ export const RightSideCart = () => {
 
           <Grid container>
              <Link to="/place order" style={{border:"solid black 2px", width:"100%", textDecoration:"none", border:"none"}}>
-             <Button className={classes.btnRS}>PROCEED TO CHECKOUT</Button>
+             <button className={classes.btnRS}>PROCEED TO CHECKOUT</button>
              </Link>
           </Grid>
           </Grid>

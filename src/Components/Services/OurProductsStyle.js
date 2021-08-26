@@ -1,5 +1,5 @@
 import { makeStyles } from "@material-ui/core";
-const useStyle = makeStyles({
+const useStyle = makeStyles(theme=>({
     productBackground:{
         marginTop:"30px",
         width:"95%",
@@ -17,6 +17,11 @@ const useStyle = makeStyles({
       border:"none",
       textDecoration:"none",
       boxShadow:"none",
+      [theme.breakpoints.down("xs")]:{
+        margin: "auto", 
+        marginTop:"10px",
+        marginBottom:"10px",
+      },
        boxShadow: "rgba(0, 0, 0, 0.2) 0px 1px 6px -1px, rgba(0, 0, 0, 0.06) 0px 1px 2px -1px",
 
       '&:hover': {
@@ -31,6 +36,11 @@ const useStyle = makeStyles({
         width:"100%",
         marginTop:"20px",
         fontWeight:"bold",
+        [theme.breakpoints.down("xs")]:{
+            margin: "auto", 
+            marginTop:"20px",
+            marginBottom:"20px",
+          },
     },
     effects:{
         border:"none",
@@ -55,5 +65,5 @@ const useStyle = makeStyles({
     addIcon:{
         fontSize:"15px",
     }
-  })
+  }))
   export default useStyle;

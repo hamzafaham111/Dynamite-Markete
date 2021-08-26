@@ -12,7 +12,7 @@ const Contact = () => {
             <Container className={classes.outerContainer}>
                 <form>
                 <Grid container>
-                <Grid container item xs={12} sm={8} spacing="2">
+                <Grid container item xs={12} md={8} spacing="2">
                 <Grid>
                 <Typography variant="h5" className={classes.topHeading}>
                    Questions, Comments, or Concerns?

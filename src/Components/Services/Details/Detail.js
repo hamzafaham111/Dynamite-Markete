@@ -13,14 +13,14 @@ export const Detail = () => {
         <div>
             <Container className={classes.outerContainer}>
                 <Grid container>
-                    <Grid item xs={6}>
+                    <Grid item xs={12} md={6}>
                         <Container>
                             <div>
                                 <img className={classes.imageSide} src={Image} />
                             </div>
                         </Container>
                     </Grid>
-                    <Grid item xs={6}>
+                    <Grid item xs={12} md={6}>
                         <div className={classes.detailContentBackground}>
                         <Typography variant="h5" className={classes.firstHeading}>
                         Original HP 305A CE410A / CE411A / CE412A / CE413A 4 Toner Cartridges | Black, Cyan, Magenta, Yellow for HP Laserjet Pro M451/M475
@@ -54,7 +54,7 @@ export const Detail = () => {
                            <div className={classes.bottonBorder}>
                            <span className={classes.btn}>+</span><input className={classes.input} type="text" value={0}/><span className={classes.btn}>-</span>
                            </div>
-                            <Button variant="contained" color="primary" className={classes.button}>Add To Cart</Button>
+                            <button variant="contained" color="primary" className={classes.button}>Add To Cart</button>
                         </div>
                     </Grid>
                 </Grid>

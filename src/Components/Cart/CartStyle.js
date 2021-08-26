@@ -2,8 +2,8 @@ import { makeStyles } from "@material-ui/core";
 import CartBanner from './banner/CartBanner.jpg';
 const useStyle = makeStyles(theme=>({
     cartHeader:{
-        height:"30vh",
-        marginTop:"18vh",
+        height:"40vh",
+        marginTop:"15vh",
         display:"flex",
         flexDirection:"column",
         justifyContent:"center",
@@ -122,13 +122,18 @@ const useStyle = makeStyles(theme=>({
         marginTop:"20px",
     },
     btnRS:{
-        border:"solid gray 1px",
+        border:"none",
+        border:"solid #BCBCBC 1px",
         margin:"auto",
         borderRadius:"none",
         width:"100%",
+        padding:"7px",
+        fontWeight:"500",
+        borderRadius:"3px",
         "&:hover":{
             color:"white",
             background:"black",
+            transition:"0.5s",
         },
     },
     continueShopingBtn:{
@@ -138,6 +143,7 @@ const useStyle = makeStyles(theme=>({
         borderRadius:"none",
         marginTop:"30px",
         width:"100%",
+        fontWeight:"600",
         "&:hover":{
             color:"white",
             background:"black",

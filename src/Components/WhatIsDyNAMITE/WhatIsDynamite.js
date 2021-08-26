@@ -4,7 +4,7 @@ import useStyle from './Style';
 const WhatIsDynamite = () => {
             const classes = useStyle();
     return (
-        <div>
+        <div className=''>
            <div className={classes.root}>
             <Typography variant="h5" className={classes.heading}>
             Dynamite Market

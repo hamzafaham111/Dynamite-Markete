@@ -17,7 +17,11 @@ display:"flex",
     logo:{
         width:"200px",  
         height:"100px",
-        objectFit:"cover",   
+        objectFit:"cover", 
+        [theme.breakpoints.down("sm")]:{
+          width:"150px",  
+          height:"80px",
+        }  
     }
   }));
   export default useStyles;

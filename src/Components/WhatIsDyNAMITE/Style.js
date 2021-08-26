@@ -22,8 +22,11 @@ const useStyle = makeStyles(theme=>({
             padding:"20px 20px 20px 20px",
         },
         margin:"auto",
-        marginTop:"40px",
         textAlign:"justify",
+    },
+    topMargin:{
+        marginTop: "65px",
     }
+
 }))
 export default useStyle;

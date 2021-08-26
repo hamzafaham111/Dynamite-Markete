@@ -30,7 +30,7 @@ const Login = () => {
                        <button className={classes.loginBtn} variant="contained">Login</button>
                    </Grid>
                    <span>
-                     <Link style={{textDecoration:"none"}}>Forget Password</Link>
+                     <Link to="/forget password" style={{textDecoration:"none"}}>Forget Password</Link>
                    </span>
                 </Grid>
               </Grid>
