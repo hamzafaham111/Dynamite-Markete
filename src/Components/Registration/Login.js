@@ -11,13 +11,14 @@ const Login = () => {
               <Grid item xs={12} md={6} className={classes.login1}>
                 <span style={{marginBottom:"30px", fontSize:"25px", fontWeight:"bold" }}>Login</span>
                 <Grid container className={classes.container} spacing="2">
+                   <form style={{width:"100%"}}>
                    <Grid item xs={12} className={classes.fieldContainer}>
                    <label className={classes.label} for="email">Username or email address * </label>
-                    <input className={classes.input} type="text" id="email" name="email" />
+                    <input className={classes.input} type="email" id="email" name="email" required/>
                    </Grid>
                    <Grid item xs={12} className={classes.fieldContainer}>
                    <label className={classes.label}  for="password">Password * </label>
-                    <input className={classes.input} type="text" id="password" name="password" />
+                    <input className={classes.input} type="password" id="password" name="password" />
                    </Grid>
                    <Grid item xs={12} style={{marginTop:"20px",}}>
                    <Checkbox
@@ -27,17 +28,19 @@ const Login = () => {
                   <span>Remember me</span>
                    </Grid>
                    <Grid item xs={12}>
-                       <button className={classes.loginBtn} variant="contained">Login</button>
+                       <button className={classes.loginBtn} type="submit" variant="contained">Login</button>
                    </Grid>
-                   <span>
+                   <Grid item xs={12}>
                      <Link to="/forget password" style={{textDecoration:"none"}}>Forget Password</Link>
-                   </span>
+                   </Grid>
+                   </form>
                 </Grid>
               </Grid>
               <Grid item xs={12} md={6} className={classes.login2}>
                 <span style={{marginBottom:"30px", fontSize:"25px", fontWeight:"bold" }}>Register</span>
                 <Grid container className={classes.container} spacing="2">
-                   <Grid item xs={12} className={classes.fieldContainer}>
+                  <form>
+                  <Grid item xs={12} className={classes.fieldContainer}>
                    <label className={classes.label} for="email">email address * </label>
                     <input className={classes.input} type="text" id="email" name="email" />
                    </Grid>
@@ -47,8 +50,9 @@ const Login = () => {
                       and for other purposes described in our privacy policy.
                    </Grid>
                    <Grid item xs={12}>
-                       <button className={classes.loginBtn} variant="contained">Register</button>
+                       <button className={classes.loginBtn} type="submit" variant="contained">Register</button>
                    </Grid>
+                  </form>
                 </Grid>
               </Grid>
             </Grid>

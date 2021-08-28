@@ -50,18 +50,25 @@ const useStyle = makeStyles(theme=>({
     },
     name:{
         fontWeight:"bold",
-        color:"gray",
+        color:"#6F599E",
     },
     priceBtnTogather:{
     display:"flex",
     flexDirection:"row"
     },
-    addIconBtn:{
-        border:"solid #C2C2C2 1px", 
-        padding:"2px 7px 3px 7px", 
-        borderRadius:"5px",
+    addCartButton:{
+        backgroundColor:"transparent",
+        border:"none",
+        border:"solid #1CAD59 1px",
+        color:"#1CAD59",
+        padding:"1px 5px 1px 5px",
+        borderRadius:"4px",
+        fontSize:"15px",
+       "&:hover":{
+        backgroundColor:"green",
+       },
     },
-    price:{fontWeight:"600", flex:1},
+    price:{fontWeight:"600", flex:1,color:"#6F599E"},
     addIcon:{
         fontSize:"15px",
     }

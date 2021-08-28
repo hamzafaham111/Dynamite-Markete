@@ -1,28 +1,35 @@
+import aboutUsImage from './Assets/aboutUsImage.jpg'
 import { makeStyles } from "@material-ui/core";
 const useStyle = makeStyles(theme=>({
     heading:{
         fontWeight:"bold",
         marginTop:"20px",
         marginBottom:"7px",
+        fontSize:"23px",
     },
-    heading2:{
-        
-        fontWeight:"bold",
-        marginBottom:"15px",
+   myContainer:{
+    backgroundImage:`url(${aboutUsImage})`,
+    backgroundSize:"cover",
+    backgroundPosition:"center",
+    [theme.breakpoints.down("md")]:{
+        backgroundImage:"none",
     },
-    heading3:{
-  
-        fontWeight:"bold",
-        marginBottom:"15px",
-    },
+   },
     root:{
-        width:"94vw",
+        width:"70vw",
         padding:"20px 80px 30px 80px",
+        
         [theme.breakpoints.down("sm")]:{
             padding:"20px 20px 20px 20px",
         },
-        margin:"auto",
+        [theme.breakpoints.down("md")]:{
+            width:"95vw",
+            margin:"auto",
+            marginTop:"40px",
+        },
         textAlign:"justify",
+        marginTop:"90px",
+        marginBottom:"20px",
     },
     topMargin:{
         marginTop: "65px",

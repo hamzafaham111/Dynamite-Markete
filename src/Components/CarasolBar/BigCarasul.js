@@ -4,7 +4,7 @@ import { Button } from '@material-ui/core';
 import { Grid, Typography } from '@material-ui/core';
 import useStyle from './CarasoulStyle';
 import FirstImage from './Assets/carasoulImage1.jpg';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import './style.css';
 
 const Banner = () =>{
@@ -19,7 +19,7 @@ return(<>
   <Typography className={classes.bannerParagraph}>
     Dynamite Market is an online retailer of Hp toner cartridges dedicated to excellence.
   </Typography>
- <Link to="/about us"><button className={classes.bannerBtn}>Read More</button></Link>
+ <Link to="products" smooth={true} duration={100}><button className={classes.bannerBtn}>Buy Now</button></Link>
 </div>
 </Grid>
 </Grid>

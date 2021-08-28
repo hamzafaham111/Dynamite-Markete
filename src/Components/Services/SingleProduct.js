@@ -34,7 +34,7 @@ const SingleProduct=(Props)=> {
            <Typography gutterBottom component="h2" className={classes.price}>
             {Props.price}
            </Typography>
-            <span className={classes.addIconBtn}><AddIcon className={classes.addIcon}/></span>
+            <button className={classes.addCartButton}>Add to cart</button>
         </div>
         </CardContent>
       </CardActionArea>

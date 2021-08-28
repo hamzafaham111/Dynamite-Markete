@@ -14,7 +14,7 @@ const useStyle = makeStyles(theme=>({
         marginTop:"8px",
     },
     outerContainer:{
-        marginTop:"20px"
+        marginTop:"110px"
     },
     outSide:{
         boxShadow: "rgba(0, 0, 0, 0.2) 0px 0px 5px 0px, rgba(0, 0, 0, 0.2) 0px 0px 1px 0px!important",
@@ -35,15 +35,21 @@ const useStyle = makeStyles(theme=>({
         fontSize:"15px",
     },
     btnStyle:{
-        background:"black",
-        color:"white",
-        padding:"10px 25px 10px 25px",
+        background:"transparent",
+        border:"solid #1DB55C 1px",
+        color:"#1DB55C",
+        padding:"10px 65px 10px 65px",
         fontWeight:"bold",
         borderRadius:"7px",
         textTransform: "capitalize",
         [theme.breakpoints.down("sm")]:{
             marginTop:"20px",
-        }
+        },
+        "&:hover":{
+            background:"#1DB55C",
+            color:"white",
+            Transition:"0.3s",
+        },
     },
     topHeading:{
         fontWeight:"bold",

@@ -1,11 +1,11 @@
 import React from 'react'
-import Products from './SingleProduct';
-import Data from './CardsApi';
+import Products from '../SingleProduct';
+import Data from './bestServiceApi';
 import { Container, Grid, Typography } from '@material-ui/core';
 import { Link } from 'react-router-dom';
-import useStyle from './OurProductsStyle';
+import useStyle from '../OurProductsStyle';
 
-const OurProducts = () => {
+const BestSellingProducts = () => {
     const classes = useStyle();
     return (
         <div id="products">
@@ -14,7 +14,7 @@ const OurProducts = () => {
                 <Grid container style={{margin:"auto"}}>
                    <Grid container>
                    <Typography variant="h5" align="center" className={classes.topHeading}>
-                        Our Products
+                        Best Selling Products
                     </Typography>
                    </Grid>
                     {
@@ -37,4 +37,4 @@ const OurProducts = () => {
         </div>
     )
 };
-export default OurProducts;
+export default BestSellingProducts;
