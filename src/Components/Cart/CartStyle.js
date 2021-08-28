@@ -12,12 +12,21 @@ const useStyle = makeStyles(theme=>({
         backgroundImage:`url(${CartBanner})`,
         backgroundPosition:"center",
         backgroundSize:"cover",
+        [theme.breakpoints.down("md")]:{
+          
+        }
+    },
+    paddingRight:{
+        paddingRight:"30px",
+        [theme.breakpoints.down("md")]:{
+            paddingRight:"0px",
+        }
     },
     topTags:{
         padding:"10px 0 10px 0",
         color:"#BEBEBE",
         borderBottom:"solid #DFDFDF 1px",
-        marginTop:"80px",
+        marginTop:"50px",
         [theme.breakpoints.down("md")]:{
             display:"none",
         }
@@ -63,6 +72,9 @@ const useStyle = makeStyles(theme=>({
         "&:hover":{
             cursor: "pointer",
         },
+        [theme.breakpoints.down("md")]:{
+            padding:"0 7px 0 7px",
+        }
     },
     gridContent:{
         textAlign:"center",
@@ -79,6 +91,11 @@ const useStyle = makeStyles(theme=>({
             alignItems:"center",
          } 
     },
+    cartProductName:{
+        [theme.breakpoints.down("md")]:{
+            fontWeight:"600"
+         } ,
+    },
     QuantityBtn:{
         border:"solid #DFDFDF 1px",
         padding:"10px",
@@ -90,6 +107,9 @@ const useStyle = makeStyles(theme=>({
         width:"50px",
         padding:"0 10px 0 10px",
         color:"gray",
+        [theme.breakpoints.down("md")]:{
+            padding:"0 7px 0 7px",
+        }
     },
     firstHeadingRS:{
         borderBottom:"solid #979797 1px",
@@ -98,9 +118,8 @@ const useStyle = makeStyles(theme=>({
         padding:"15px 0 10px 0",
     },
     rightSide:{
-        background:"#F9F9F9",
         padding:"20px",
-        marginTop:"80px",
+        marginTop:"25px",
         border:"solid #B4B4B4 1px",
         borderStyle: "dotted",
         borderRadius:"4px",
@@ -123,22 +142,23 @@ const useStyle = makeStyles(theme=>({
     },
     btnRS:{
         border:"none",
-        border:"solid #BCBCBC 1px",
         margin:"auto",
         borderRadius:"none",
         width:"100%",
         padding:"7px",
         fontWeight:"500",
         borderRadius:"3px",
+        background:"#1DB55C",
+        color:"white",
         "&:hover":{
             color:"white",
-            background:"black",
-            transition:"0.5s",
+            background:"#158443",
+            transition:"0.3s",
         },
     },
     continueShopingBtn:{
-        border:"solid #D3D3D3 1px",
-        color:"#AEAEAE",
+        border:"solid #158443 1px",
+        color:"#158443",
         margin:"auto",
         borderRadius:"none",
         marginTop:"30px",
@@ -146,7 +166,7 @@ const useStyle = makeStyles(theme=>({
         fontWeight:"600",
         "&:hover":{
             color:"white",
-            background:"black",
+            background:"#158443",
         },
     },
     flex:{

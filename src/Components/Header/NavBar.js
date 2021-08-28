@@ -21,9 +21,9 @@ const NavBar = () => {
           <Typography variant="h6" className={classes.title}>
            <Link to="/"> <img className={classes.logo}src={Logo} alt="logo"/></Link>
           </Typography>
-         <Link to="/login" style={{textDecoration:"none", color:"black"}}><span style={{fontWeight:"bold", marginRight:"15px",cursor:"pointer",}}>Login</span></Link>
+         <Link to="/login" style={{textDecoration:"none", color:"#6F599E"}}><span style={{fontWeight:"bold", marginRight:"15px",cursor:"pointer",}}>Login</span></Link>
           <Link to="/cart" className={classes.link}>
-          <ShoppingCartIcon className={classes.icon}/><b>({0})</b>
+          <ShoppingCartIcon className={classes.icon}/><b style={{color:"#6F599E"}}>({0})</b>
           </Link>
         </Toolbar>
       </AppBar>

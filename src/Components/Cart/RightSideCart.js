@@ -20,19 +20,19 @@ export const RightSideCart = () => {
           <div style={{width:"100%"}}>
           <Typography align="left">Shipping:</Typography>
           <Grid container style={{display:"flex", flexDirection:"row", alignItems:"center", padding:"10px 0 10px 0", }}>
-                  <input type="radio" style={{marginRight:"10px"}}/> <span className={classes.flex}> Free Shipping</span><span style={{marginLeft:"auto"}}>$0.00</span>
+                  <input type="radio" name="shipping" style={{marginRight:"10px"}}/> <span className={classes.flex}> Free Shipping</span><span style={{marginLeft:"auto"}}>$0.00</span>
           </Grid>
           </div>
 
           <div style={{width:"100%"}}>
           <Grid container style={{display:"flex", flexDirection:"row", alignItems:"center", padding:"10px 0 10px 0"}}>
-                  <input type="radio" style={{marginRight:"10px"}}/> <span className={classes.flex}> Standard:</span><span style={{marginLeft:"auto"}}>$0.00</span>
+                  <input type="radio" name="shipping" style={{marginRight:"10px"}}/> <span className={classes.flex}> Standard:</span><span style={{marginLeft:"auto"}}>$0.00</span>
           </Grid>
           </div>
 
           <div style={{width:"100%"}}>
           <Grid container style={{display:"flex", flexDirection:"row", alignItems:"center", padding:"10px 0 10px 0"}}>
-                  <input type="radio" style={{marginRight:"10px"}}/> <span className={classes.flex}> Express:</span><span style={{marginLeft:"auto"}}>$0.00</span>
+                  <input type="radio" name="shipping" style={{marginRight:"10px"}}/> <span className={classes.flex}> Express:</span><span style={{marginLeft:"auto"}}>$0.00</span>
           </Grid>
           </div>
 
@@ -42,13 +42,13 @@ export const RightSideCart = () => {
           </Grid>
 
           <Grid container>
-             <Link to="/place order" style={{border:"solid black 2px", width:"100%", textDecoration:"none", border:"none"}}>
+             <Link to="/place order" style={{width:"100%", textDecoration:"none",}}>
              <button className={classes.btnRS}>PROCEED TO CHECKOUT</button>
              </Link>
           </Grid>
           </Grid>
           <Grid container>
-          <Link to="/" style={{border:"solid black 2px", width:"100%", textDecoration:"none", border:"none"}}>
+          <Link to="/" style={{width:"100%", textDecoration:"none", border:"none"}}>
           <Button endIcon={<CachedIcon/>} className={classes.continueShopingBtn}>CONTINUE SHOPING</Button>    
           </Link>
           </Grid>  

@@ -14,7 +14,7 @@ const Cart = () => {
            </div>
            <div>
                    <Grid container style={{marginRight:"50px"}}>
-                        <Grid container item xs={12}md={9} style={{paddingRight:"30px"}}>
+                        <Grid container item xs={12}md={9}  className={classes.paddingRight}>
                             <Grid container item xs={12} className={classes.topTags}>
                                 <Grid item xs={5}>Product</Grid>
                                 <Grid className={classes.gridContent}  item xs={2}>Price</Grid>
@@ -25,10 +25,10 @@ const Cart = () => {
                             {
                             Data.map((val, index)=>{
                             return(
-                                <Grid container item xs={12} className={classes.cartProduct}>
+                                <Grid container item xs={12} className={classes.cartProduct} style={{margin:"auto"}}>
                                     <Grid className={classes.imageGrid} item xs={12} md={5}>
                                         <img className={classes.productImage} src={val.Image} alt="product Image"/>
-                                        <span>{val.name}</span>
+                                        <span className={classes.cartProductName}>{val.name}</span>
                                     </Grid>
                                     <Grid className={classes.gridContent} item xs={12} md={2}>{val.Price}</Grid>
                                     <Grid className={classes.gridContent}  item xs={12} md={2}>

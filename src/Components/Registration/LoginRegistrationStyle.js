@@ -45,6 +45,7 @@ color:"white",
 border:"none",
 padding:"7px",
 borderRadius:"5px",
+marginBottom:"5px",
 },
 
 

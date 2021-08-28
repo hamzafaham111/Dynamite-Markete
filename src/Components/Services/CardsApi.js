@@ -9,17 +9,17 @@ import ProductPicture8 from './Assets/image9.jpg'
 const Data = [
     {
     name:"Original HP 305A CE410A ...",
-    Price:"$1000",
+    Price:"$398",
     Image:ProductPicture1
     },
     {
     name:"HP 507A | CE400A, CE401A ...",
-    Price:"$99.9",
+    Price:"$908",
     Image:ProductPicture2
     },
     {
     name:"HP 55X | CE255X | Toner ...",
-    Price:"$900$",
+    Price:"$398",
     Image:ProductPicture3
     },
     {
@@ -29,22 +29,22 @@ const Data = [
     },
     {
     name:"HP 305A | CE410A | Toner ... ",
-    Price:"$11",
+    Price:"$398",
     Image:ProductPicture5
     },
     {
     name:"HP 305A | CE411A | Toner ...",
-    Price:"$11",
+    Price:"$398",
     Image:ProductPicture6
     },
     {
     name:"HP 305A | CE412A | Toner ...",
-    Price:"$11",
+    Price:"$398",
     Image:ProductPicture7
     },
     {
     name:"HP 305A | CE413A | Toner ",
-    Price:"$11",
+    Price:"$398",
     Image:ProductPicture8
     },
 ];

@@ -48,18 +48,6 @@ const RightSide = () => {
                 </span>
                </div>
                </div>
-
-               <div className={classes.rightSideElements}>
-               <Typography className={classes.textBold}>
-               Website:
-                </Typography>
-               <div  style={{display:"flex", flexDirection:"row"}}>
-               <span style={{flex:"1"}} className={classes.fontSize}>
-               https://redq.io/
-                </span>
-                <span style={{margin:"0 20px 0 20px"}}><Button className={classes.btnStyle2} disableRipple>Visit This Site</Button></span>
-               </div>
-               </div>
                {/* <div>
                    <Typography className={classes.textBold2}>Follow Us:</Typography>
                    <span className={classes.icon}><FacebookIcon className={classes.iconSize}/></span>

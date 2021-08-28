@@ -8,11 +8,14 @@ display:"flex",
     },
     link:{
       textDecoration:"none",
-      color:"black",
+      color:"#6F599E",
       "&:hover":{color:"black",},
     },
     title: {
       flexGrow: 1,
+    },
+    icon:{
+      color:"#6F599E",
     },
     logo:{
         width:"200px",  
@@ -22,6 +25,14 @@ display:"flex",
           width:"150px",  
           height:"80px",
         }  
-    }
+    },
+    addToCardDropdown:{
+  display:"flex",
+  flexDirection:"column",
+  display:"none",
+  "&:hover":{
+    display:"block"
+  },
+  },
   }));
   export default useStyles;

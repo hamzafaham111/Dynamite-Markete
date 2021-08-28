@@ -35,7 +35,7 @@ const Contact = () => {
                     <textarea rows="12" className={classes.input} type = "text" />
                     </Grid>
                     <Grid className={classes.formFont} item xs={12}>
-                    <Button className={classes.btnStyle} variant="contained" type="submit">Send</Button>
+                    <button className={classes.btnStyle} variant="contained" type="submit">Send</button>
                     </Grid>
                 </Grid>
                 <Grid container item xs={12} md={4} >
